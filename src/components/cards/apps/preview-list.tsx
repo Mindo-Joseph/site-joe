@@ -4,7 +4,7 @@ import CardTitle from "@/shared/components/titles/card-title";
 import cardStyle from "@/shared/styles/card";
 import Link from "next/link";
 import AppItem from "./app-item";
-import { mobileApps } from "./data/mobile-apps";
+import { webApps } from "./data/web-apps";
 
 function PreviewAppsList() {
   return (
@@ -12,7 +12,7 @@ function PreviewAppsList() {
       <CardTitle icon={<DevicesIcon />} title="FEATURED" />
       <div className="h-8" />
       <div className="flex flex-wrap content-center gap-7">
-        {[...mobileApps.slice(0, 2)].map((card) => (
+        {[...webApps.slice(0, 2)].map((card) => (
           <AppItem key={card.title} card={card} />
         ))}
       </div>
