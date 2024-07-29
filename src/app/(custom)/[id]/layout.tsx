@@ -1,4 +1,4 @@
-import { font } from "@/app/(root)/layout";
+import { font } from "@/app/(root)/font";
 import getAppPage from "@/components/cards/app-page/data/get-object";
 import Providers from "@/lib/provider";
 import metadataBuilder from "@/metadata/builder";
