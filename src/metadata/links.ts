@@ -1,10 +1,10 @@
-import { linkedinUsername, title, username } from "@/constants/strings";
+import { linkedinUsername, title, username, instagramUsername, xUsername } from "@/constants/strings";
 
 const linksMetadata = {
-  x: "https://x.com/" + username,
+  x: "https://x.com/" + xUsername,
   linkedin: "https://linkedin.com/in/" + linkedinUsername,
   github: "https://github.com/" + username,
-  instagram: "https://instagram.com/" + username,
+  instagram: "https://instagram.com/" + instagramUsername,
   youtube: "https://youtube.com/@" + username,
 };
 

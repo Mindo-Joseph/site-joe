@@ -1,5 +1,3 @@
-## [Live version](https://kreatordev.com)
-
 ### About
 A personal website built using nextjs & tailwindcss.
 

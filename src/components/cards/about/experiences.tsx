@@ -20,6 +20,7 @@ export default function ExperiencesCard({ className }: { className?: string }) {
       <div className="flex flex-wrap w-full gap-2">
         {uniqueTags.map((tag: any) => {
           const link = linkByTag(tag);
+          
           return (
             <a
               href={link}

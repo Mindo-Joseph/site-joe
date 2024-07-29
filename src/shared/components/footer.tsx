@@ -23,11 +23,6 @@ function Footer() {
         <div className="w-1" />
         {github}
         <p className="mx-3 hidden 2xs:block">|</p>
-        <a className={onHoverStyle + " flex"} target="_blank" href={sourceCode}>
-          Source code
-          <div className="w-1.5" />
-          <div className="w-4 bg-current rounded-full m-auto">{githubIcon}</div>
-        </a>
       </div>
       <div className="flex">
         {github}
