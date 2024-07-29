@@ -6,7 +6,7 @@ import linkByTag from "../apps/data/link-by-tag";
 import { mobileApps } from "../apps/data/mobile-apps";
 import { webApps } from "../apps/data/web-apps";
 
-export const uniqueTags = [...webApps, ...mobileApps]
+export const uniqueTags = [...webApps]
   .map((item) => item.tags || [])
   .flat()
   .filter((item, index, array) => array.indexOf(item) === index)
@@ -20,7 +20,7 @@ export default function ExperiencesCard({ className }: { className?: string }) {
       <div className="flex flex-wrap w-full gap-2">
         {uniqueTags.map((tag: any) => {
           const link = linkByTag(tag);
-          
+
           return (
             <a
               href={link}

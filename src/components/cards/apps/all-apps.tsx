@@ -21,17 +21,13 @@ function AllAppsList() {
       name: "WEB",
       icon: <DesktopIcon />,
     },
-    {
-      name: "MOBILE",
-      icon: <MobileIcon />,
-    },
   ];
   const list =
     selected == "WEB"
       ? webApps
       : selected == "MOBILE"
-      ? mobileApps
-      : [...webApps, ...mobileApps];
+        ? mobileApps
+        : [...webApps, ...mobileApps];
 
   return (
     <div className={cardStyle + "mt-5 !p-1"}>
@@ -60,8 +56,8 @@ function AllAppsList() {
               {filter.name == "WEB"
                 ? webApps.length
                 : filter.name == "MOBILE"
-                ? mobileApps.length
-                : webApps.length + mobileApps.length}
+                  ? mobileApps.length
+                  : webApps.length + mobileApps.length}
             </p>
           </button>
         ))}
